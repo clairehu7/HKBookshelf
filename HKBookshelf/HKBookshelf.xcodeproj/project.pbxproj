@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		776DD2B21DB8B0360084C951 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 776DD2B11DB8B0360084C951 /* main.m */; };
+		776DD2B51DB8B0360084C951 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 776DD2B41DB8B0360084C951 /* AppDelegate.m */; };
+		776DD2B81DB8B0360084C951 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776DD2B71DB8B0360084C951 /* ViewController.m */; };
+		776DD2BB1DB8B0360084C951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776DD2B91DB8B0360084C951 /* Main.storyboard */; };
+		776DD2BE1DB8B0360084C951 /* HKBookshelf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 776DD2BC1DB8B0360084C951 /* HKBookshelf.xcdatamodeld */; };
+		776DD2C01DB8B0360084C951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 776DD2BF1DB8B0360084C951 /* Assets.xcassets */; };
+		776DD2C31DB8B0360084C951 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776DD2C11DB8B0360084C951 /* LaunchScreen.storyboard */; };
+		776DD2CE1DB8B0360084C951 /* HKBookshelfTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 776DD2CD1DB8B0360084C951 /* HKBookshelfTests.m */; };
+		776DD2D91DB8B0360084C951 /* HKBookshelfUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 776DD2D81DB8B0360084C951 /* HKBookshelfUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		776DD2CA1DB8B0360084C951 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 776DD2A51DB8B0360084C951 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 776DD2AC1DB8B0360084C951;
+			remoteInfo = HKBookshelf;
+		};
+		776DD2D51DB8B0360084C951 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 776DD2A51DB8B0360084C951 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 776DD2AC1DB8B0360084C951;
+			remoteInfo = HKBookshelf;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		776DD2AD1DB8B0360084C951 /* HKBookshelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKBookshelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		776DD2B11DB8B0360084C951 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		776DD2B31DB8B0360084C951 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		776DD2B41DB8B0360084C951 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		776DD2B61DB8B0360084C951 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		776DD2B71DB8B0360084C951 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		776DD2BA1DB8B0360084C951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		776DD2BD1DB8B0360084C951 /* HKBookshelf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HKBookshelf.xcdatamodel; sourceTree = "<group>"; };
+		776DD2BF1DB8B0360084C951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		776DD2C21DB8B0360084C951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		776DD2C41DB8B0360084C951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		776DD2C91DB8B0360084C951 /* HKBookshelfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HKBookshelfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		776DD2CD1DB8B0360084C951 /* HKBookshelfTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKBookshelfTests.m; sourceTree = "<group>"; };
+		776DD2CF1DB8B0360084C951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		776DD2D41DB8B0360084C951 /* HKBookshelfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HKBookshelfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		776DD2D81DB8B0360084C951 /* HKBookshelfUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKBookshelfUITests.m; sourceTree = "<group>"; };
+		776DD2DA1DB8B0360084C951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		776DD2AA1DB8B0360084C951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776DD2C61DB8B0360084C951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776DD2D11DB8B0360084C951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		776DD2A41DB8B0360084C951 = {
+			isa = PBXGroup;
+			children = (
+				776DD2AF1DB8B0360084C951 /* HKBookshelf */,
+				776DD2CC1DB8B0360084C951 /* HKBookshelfTests */,
+				776DD2D71DB8B0360084C951 /* HKBookshelfUITests */,
+				776DD2AE1DB8B0360084C951 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		776DD2AE1DB8B0360084C951 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				776DD2AD1DB8B0360084C951 /* HKBookshelf.app */,
+				776DD2C91DB8B0360084C951 /* HKBookshelfTests.xctest */,
+				776DD2D41DB8B0360084C951 /* HKBookshelfUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		776DD2AF1DB8B0360084C951 /* HKBookshelf */ = {
+			isa = PBXGroup;
+			children = (
+				776DD2B31DB8B0360084C951 /* AppDelegate.h */,
+				776DD2B41DB8B0360084C951 /* AppDelegate.m */,
+				776DD2B61DB8B0360084C951 /* ViewController.h */,
+				776DD2B71DB8B0360084C951 /* ViewController.m */,
+				776DD2B91DB8B0360084C951 /* Main.storyboard */,
+				776DD2BF1DB8B0360084C951 /* Assets.xcassets */,
+				776DD2C11DB8B0360084C951 /* LaunchScreen.storyboard */,
+				776DD2C41DB8B0360084C951 /* Info.plist */,
+				776DD2BC1DB8B0360084C951 /* HKBookshelf.xcdatamodeld */,
+				776DD2B01DB8B0360084C951 /* Supporting Files */,
+			);
+			path = HKBookshelf;
+			sourceTree = "<group>";
+		};
+		776DD2B01DB8B0360084C951 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				776DD2B11DB8B0360084C951 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		776DD2CC1DB8B0360084C951 /* HKBookshelfTests */ = {
+			isa = PBXGroup;
+			children = (
+				776DD2CD1DB8B0360084C951 /* HKBookshelfTests.m */,
+				776DD2CF1DB8B0360084C951 /* Info.plist */,
+			);
+			path = HKBookshelfTests;
+			sourceTree = "<group>";
+		};
+		776DD2D71DB8B0360084C951 /* HKBookshelfUITests */ = {
+			isa = PBXGroup;
+			children = (
+				776DD2D81DB8B0360084C951 /* HKBookshelfUITests.m */,
+				776DD2DA1DB8B0360084C951 /* Info.plist */,
+			);
+			path = HKBookshelfUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		776DD2AC1DB8B0360084C951 /* HKBookshelf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 776DD2DD1DB8B0360084C951 /* Build configuration list for PBXNativeTarget "HKBookshelf" */;
+			buildPhases = (
+				776DD2A91DB8B0360084C951 /* Sources */,
+				776DD2AA1DB8B0360084C951 /* Frameworks */,
+				776DD2AB1DB8B0360084C951 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HKBookshelf;
+			productName = HKBookshelf;
+			productReference = 776DD2AD1DB8B0360084C951 /* HKBookshelf.app */;
+			productType = "com.apple.product-type.application";
+		};
+		776DD2C81DB8B0360084C951 /* HKBookshelfTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 776DD2E01DB8B0360084C951 /* Build configuration list for PBXNativeTarget "HKBookshelfTests" */;
+			buildPhases = (
+				776DD2C51DB8B0360084C951 /* Sources */,
+				776DD2C61DB8B0360084C951 /* Frameworks */,
+				776DD2C71DB8B0360084C951 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				776DD2CB1DB8B0360084C951 /* PBXTargetDependency */,
+			);
+			name = HKBookshelfTests;
+			productName = HKBookshelfTests;
+			productReference = 776DD2C91DB8B0360084C951 /* HKBookshelfTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		776DD2D31DB8B0360084C951 /* HKBookshelfUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 776DD2E31DB8B0360084C951 /* Build configuration list for PBXNativeTarget "HKBookshelfUITests" */;
+			buildPhases = (
+				776DD2D01DB8B0360084C951 /* Sources */,
+				776DD2D11DB8B0360084C951 /* Frameworks */,
+				776DD2D21DB8B0360084C951 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				776DD2D61DB8B0360084C951 /* PBXTargetDependency */,
+			);
+			name = HKBookshelfUITests;
+			productName = HKBookshelfUITests;
+			productReference = 776DD2D41DB8B0360084C951 /* HKBookshelfUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		776DD2A51DB8B0360084C951 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = HKY;
+				TargetAttributes = {
+					776DD2AC1DB8B0360084C951 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = PHQC575L44;
+						ProvisioningStyle = Automatic;
+					};
+					776DD2C81DB8B0360084C951 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5SBBQYT2MV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 776DD2AC1DB8B0360084C951;
+					};
+					776DD2D31DB8B0360084C951 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5SBBQYT2MV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 776DD2AC1DB8B0360084C951;
+					};
+				};
+			};
+			buildConfigurationList = 776DD2A81DB8B0360084C951 /* Build configuration list for PBXProject "HKBookshelf" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 776DD2A41DB8B0360084C951;
+			productRefGroup = 776DD2AE1DB8B0360084C951 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				776DD2AC1DB8B0360084C951 /* HKBookshelf */,
+				776DD2C81DB8B0360084C951 /* HKBookshelfTests */,
+				776DD2D31DB8B0360084C951 /* HKBookshelfUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		776DD2AB1DB8B0360084C951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				776DD2C31DB8B0360084C951 /* LaunchScreen.storyboard in Resources */,
+				776DD2C01DB8B0360084C951 /* Assets.xcassets in Resources */,
+				776DD2BB1DB8B0360084C951 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776DD2C71DB8B0360084C951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776DD2D21DB8B0360084C951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		776DD2A91DB8B0360084C951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				776DD2BE1DB8B0360084C951 /* HKBookshelf.xcdatamodeld in Sources */,
+				776DD2B81DB8B0360084C951 /* ViewController.m in Sources */,
+				776DD2B51DB8B0360084C951 /* AppDelegate.m in Sources */,
+				776DD2B21DB8B0360084C951 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776DD2C51DB8B0360084C951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				776DD2CE1DB8B0360084C951 /* HKBookshelfTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776DD2D01DB8B0360084C951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				776DD2D91DB8B0360084C951 /* HKBookshelfUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		776DD2CB1DB8B0360084C951 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 776DD2AC1DB8B0360084C951 /* HKBookshelf */;
+			targetProxy = 776DD2CA1DB8B0360084C951 /* PBXContainerItemProxy */;
+		};
+		776DD2D61DB8B0360084C951 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 776DD2AC1DB8B0360084C951 /* HKBookshelf */;
+			targetProxy = 776DD2D51DB8B0360084C951 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		776DD2B91DB8B0360084C951 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				776DD2BA1DB8B0360084C951 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		776DD2C11DB8B0360084C951 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				776DD2C21DB8B0360084C951 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		776DD2DB1DB8B0360084C951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		776DD2DC1DB8B0360084C951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		776DD2DE1DB8B0360084C951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = PHQC575L44;
+				INFOPLIST_FILE = HKBookshelf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lab.HKBookshelf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		776DD2DF1DB8B0360084C951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = PHQC575L44;
+				INFOPLIST_FILE = HKBookshelf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lab.HKBookshelf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		776DD2E11DB8B0360084C951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5SBBQYT2MV;
+				INFOPLIST_FILE = HKBookshelfTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.experiment.HKBookshelfTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HKBookshelf.app/HKBookshelf";
+			};
+			name = Debug;
+		};
+		776DD2E21DB8B0360084C951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5SBBQYT2MV;
+				INFOPLIST_FILE = HKBookshelfTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.experiment.HKBookshelfTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HKBookshelf.app/HKBookshelf";
+			};
+			name = Release;
+		};
+		776DD2E41DB8B0360084C951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5SBBQYT2MV;
+				INFOPLIST_FILE = HKBookshelfUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.experiment.HKBookshelfUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HKBookshelf;
+			};
+			name = Debug;
+		};
+		776DD2E51DB8B0360084C951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5SBBQYT2MV;
+				INFOPLIST_FILE = HKBookshelfUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.experiment.HKBookshelfUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HKBookshelf;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		776DD2A81DB8B0360084C951 /* Build configuration list for PBXProject "HKBookshelf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				776DD2DB1DB8B0360084C951 /* Debug */,
+				776DD2DC1DB8B0360084C951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		776DD2DD1DB8B0360084C951 /* Build configuration list for PBXNativeTarget "HKBookshelf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				776DD2DE1DB8B0360084C951 /* Debug */,
+				776DD2DF1DB8B0360084C951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		776DD2E01DB8B0360084C951 /* Build configuration list for PBXNativeTarget "HKBookshelfTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				776DD2E11DB8B0360084C951 /* Debug */,
+				776DD2E21DB8B0360084C951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		776DD2E31DB8B0360084C951 /* Build configuration list for PBXNativeTarget "HKBookshelfUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				776DD2E41DB8B0360084C951 /* Debug */,
+				776DD2E51DB8B0360084C951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		776DD2BC1DB8B0360084C951 /* HKBookshelf.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				776DD2BD1DB8B0360084C951 /* HKBookshelf.xcdatamodel */,
+			);
+			currentVersion = 776DD2BD1DB8B0360084C951 /* HKBookshelf.xcdatamodel */;
+			path = HKBookshelf.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 776DD2A51DB8B0360084C951 /* Project object */;
+}
