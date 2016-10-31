@@ -7,15 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		770632591DC7370600EC4E66 /* 百分百.txt in Resources */ = {isa = PBXBuildFile; fileRef = 770632581DC7370600EC4E66 /* 百分百.txt */; };
+		7710D2581DB9AE1D000D2555 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7710D2571DB9AE1D000D2555 /* libz.tbd */; };
+		7710D2761DB9C2F1000D2555 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7710D2731DB9C2F1000D2555 /* Default-568h@2x.png */; };
+		7710D2771DB9C2F1000D2555 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7710D2741DB9C2F1000D2555 /* Default.png */; };
+		7710D2781DB9C2F1000D2555 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7710D2751DB9C2F1000D2555 /* Default@2x.png */; };
+		775395531DBDB93F00DB5F38 /* om.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 775395521DBDB93F00DB5F38 /* om.pdf */; };
 		776DD2B21DB8B0360084C951 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 776DD2B11DB8B0360084C951 /* main.m */; };
-		776DD2B51DB8B0360084C951 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 776DD2B41DB8B0360084C951 /* AppDelegate.m */; };
-		776DD2B81DB8B0360084C951 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776DD2B71DB8B0360084C951 /* ViewController.m */; };
-		776DD2BB1DB8B0360084C951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776DD2B91DB8B0360084C951 /* Main.storyboard */; };
 		776DD2BE1DB8B0360084C951 /* HKBookshelf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 776DD2BC1DB8B0360084C951 /* HKBookshelf.xcdatamodeld */; };
 		776DD2C01DB8B0360084C951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 776DD2BF1DB8B0360084C951 /* Assets.xcassets */; };
 		776DD2C31DB8B0360084C951 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776DD2C11DB8B0360084C951 /* LaunchScreen.storyboard */; };
 		776DD2CE1DB8B0360084C951 /* HKBookshelfTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 776DD2CD1DB8B0360084C951 /* HKBookshelfTests.m */; };
 		776DD2D91DB8B0360084C951 /* HKBookshelfUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 776DD2D81DB8B0360084C951 /* HKBookshelfUITests.m */; };
+		77985C7F1DB9C58F00CC394B /* BookSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 77985C771DB9C58F00CC394B /* BookSource.m */; };
+		77985C801DB9C58F00CC394B /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77985C791DB9C58F00CC394B /* BookViewController.m */; };
+		77985C811DB9C58F00CC394B /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77985C7B1DB9C58F00CC394B /* DataViewController.m */; };
+		77985C831DB9C58F00CC394B /* PDFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77985C7E1DB9C58F00CC394B /* PDFScrollView.m */; };
+		77985C851DB9C5A700CC394B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77985C841DB9C5A700CC394B /* Main.storyboard */; };
+		77985CAA1DB9C5DA00CC394B /* HKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77985C8E1DB9C5DA00CC394B /* HKNavigationController.m */; };
+		77985CAB1DB9C5DA00CC394B /* HKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77985C911DB9C5DA00CC394B /* HKViewController.m */; };
+		77985CAC1DB9C5DA00CC394B /* NSDate+HKExtends.m in Sources */ = {isa = PBXBuildFile; fileRef = 77985C951DB9C5DA00CC394B /* NSDate+HKExtends.m */; };
+		77985CAD1DB9C5DA00CC394B /* NSDictionary+HKExtends.m in Sources */ = {isa = PBXBuildFile; fileRef = 77985C971DB9C5DA00CC394B /* NSDictionary+HKExtends.m */; };
+		77985CAE1DB9C5DA00CC394B /* NSString+HKExtends.m in Sources */ = {isa = PBXBuildFile; fileRef = 77985C991DB9C5DA00CC394B /* NSString+HKExtends.m */; };
+		77985CAF1DB9C5DA00CC394B /* UIBarButtonItem+HKExtends.m in Sources */ = {isa = PBXBuildFile; fileRef = 77985C9B1DB9C5DA00CC394B /* UIBarButtonItem+HKExtends.m */; };
+		77985CB01DB9C5DA00CC394B /* UIImage+HKExtends.m in Sources */ = {isa = PBXBuildFile; fileRef = 77985C9D1DB9C5DA00CC394B /* UIImage+HKExtends.m */; };
+		77985CB11DB9C5DA00CC394B /* UILabel+HKExtends.m in Sources */ = {isa = PBXBuildFile; fileRef = 77985C9F1DB9C5DA00CC394B /* UILabel+HKExtends.m */; };
+		77985CB21DB9C5DA00CC394B /* UINavigationController+HKExtends.m in Sources */ = {isa = PBXBuildFile; fileRef = 77985CA11DB9C5DA00CC394B /* UINavigationController+HKExtends.m */; };
+		77985CBA1DB9C62A00CC394B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77985CB91DB9C62A00CC394B /* AppDelegate.m */; };
+		77985CBD1DB9E46C00CC394B /* TiledPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77985CBC1DB9E46C00CC394B /* TiledPDFView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +55,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		770632581DC7370600EC4E66 /* 百分百.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "百分百.txt"; sourceTree = "<group>"; };
+		7710D2571DB9AE1D000D2555 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		7710D2731DB9C2F1000D2555 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7710D2741DB9C2F1000D2555 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7710D2751DB9C2F1000D2555 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		775395521DBDB93F00DB5F38 /* om.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = om.pdf; sourceTree = "<group>"; };
 		776DD2AD1DB8B0360084C951 /* HKBookshelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKBookshelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		776DD2B11DB8B0360084C951 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		776DD2B31DB8B0360084C951 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		776DD2B41DB8B0360084C951 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		776DD2B61DB8B0360084C951 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		776DD2B71DB8B0360084C951 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		776DD2BA1DB8B0360084C951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		776DD2BD1DB8B0360084C951 /* HKBookshelf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HKBookshelf.xcdatamodel; sourceTree = "<group>"; };
 		776DD2BF1DB8B0360084C951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		776DD2C21DB8B0360084C951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +73,39 @@
 		776DD2D41DB8B0360084C951 /* HKBookshelfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HKBookshelfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		776DD2D81DB8B0360084C951 /* HKBookshelfUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKBookshelfUITests.m; sourceTree = "<group>"; };
 		776DD2DA1DB8B0360084C951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77985C761DB9C58F00CC394B /* BookSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookSource.h; sourceTree = "<group>"; };
+		77985C771DB9C58F00CC394B /* BookSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookSource.m; sourceTree = "<group>"; };
+		77985C781DB9C58F00CC394B /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
+		77985C791DB9C58F00CC394B /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
+		77985C7A1DB9C58F00CC394B /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		77985C7B1DB9C58F00CC394B /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		77985C7D1DB9C58F00CC394B /* PDFScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFScrollView.h; sourceTree = "<group>"; };
+		77985C7E1DB9C58F00CC394B /* PDFScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFScrollView.m; sourceTree = "<group>"; };
+		77985C841DB9C5A700CC394B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		77985C8D1DB9C5DA00CC394B /* HKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKNavigationController.h; sourceTree = "<group>"; };
+		77985C8E1DB9C5DA00CC394B /* HKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKNavigationController.m; sourceTree = "<group>"; };
+		77985C901DB9C5DA00CC394B /* HKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKViewController.h; sourceTree = "<group>"; };
+		77985C911DB9C5DA00CC394B /* HKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKViewController.m; sourceTree = "<group>"; };
+		77985C941DB9C5DA00CC394B /* NSDate+HKExtends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HKExtends.h"; sourceTree = "<group>"; };
+		77985C951DB9C5DA00CC394B /* NSDate+HKExtends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HKExtends.m"; sourceTree = "<group>"; };
+		77985C961DB9C5DA00CC394B /* NSDictionary+HKExtends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HKExtends.h"; sourceTree = "<group>"; };
+		77985C971DB9C5DA00CC394B /* NSDictionary+HKExtends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HKExtends.m"; sourceTree = "<group>"; };
+		77985C981DB9C5DA00CC394B /* NSString+HKExtends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HKExtends.h"; sourceTree = "<group>"; };
+		77985C991DB9C5DA00CC394B /* NSString+HKExtends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HKExtends.m"; sourceTree = "<group>"; };
+		77985C9A1DB9C5DA00CC394B /* UIBarButtonItem+HKExtends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HKExtends.h"; sourceTree = "<group>"; };
+		77985C9B1DB9C5DA00CC394B /* UIBarButtonItem+HKExtends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HKExtends.m"; sourceTree = "<group>"; };
+		77985C9C1DB9C5DA00CC394B /* UIImage+HKExtends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HKExtends.h"; sourceTree = "<group>"; };
+		77985C9D1DB9C5DA00CC394B /* UIImage+HKExtends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HKExtends.m"; sourceTree = "<group>"; };
+		77985C9E1DB9C5DA00CC394B /* UILabel+HKExtends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+HKExtends.h"; sourceTree = "<group>"; };
+		77985C9F1DB9C5DA00CC394B /* UILabel+HKExtends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+HKExtends.m"; sourceTree = "<group>"; };
+		77985CA01DB9C5DA00CC394B /* UINavigationController+HKExtends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+HKExtends.h"; sourceTree = "<group>"; };
+		77985CA11DB9C5DA00CC394B /* UINavigationController+HKExtends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+HKExtends.m"; sourceTree = "<group>"; };
+		77985CA31DB9C5DA00CC394B /* HKModelMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKModelMarco.h; sourceTree = "<group>"; };
+		77985CA41DB9C5DA00CC394B /* HKViewMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKViewMarco.h; sourceTree = "<group>"; };
+		77985CB81DB9C62A00CC394B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		77985CB91DB9C62A00CC394B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		77985CBB1DB9E46C00CC394B /* TiledPDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledPDFView.h; sourceTree = "<group>"; };
+		77985CBC1DB9E46C00CC394B /* TiledPDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledPDFView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7710D2581DB9AE1D000D2555 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +134,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7710D2561DB9AE1D000D2555 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7710D2571DB9AE1D000D2555 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		776DD2A41DB8B0360084C951 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +149,7 @@
 				776DD2CC1DB8B0360084C951 /* HKBookshelfTests */,
 				776DD2D71DB8B0360084C951 /* HKBookshelfUITests */,
 				776DD2AE1DB8B0360084C951 /* Products */,
+				7710D2561DB9AE1D000D2555 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,15 +166,10 @@
 		776DD2AF1DB8B0360084C951 /* HKBookshelf */ = {
 			isa = PBXGroup;
 			children = (
-				776DD2B31DB8B0360084C951 /* AppDelegate.h */,
-				776DD2B41DB8B0360084C951 /* AppDelegate.m */,
-				776DD2B61DB8B0360084C951 /* ViewController.h */,
-				776DD2B71DB8B0360084C951 /* ViewController.m */,
-				776DD2B91DB8B0360084C951 /* Main.storyboard */,
-				776DD2BF1DB8B0360084C951 /* Assets.xcassets */,
-				776DD2C11DB8B0360084C951 /* LaunchScreen.storyboard */,
-				776DD2C41DB8B0360084C951 /* Info.plist */,
-				776DD2BC1DB8B0360084C951 /* HKBookshelf.xcdatamodeld */,
+				77985CB71DB9C62A00CC394B /* AppDelegate */,
+				77985C891DB9C5DA00CC394B /* General */,
+				77985CA61DB9C5DA00CC394B /* Vendor */,
+				77985C741DB9C55E00CC394B /* Business */,
 				776DD2B01DB8B0360084C951 /* Supporting Files */,
 			);
 			path = HKBookshelf;
@@ -120,6 +178,15 @@
 		776DD2B01DB8B0360084C951 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				775395521DBDB93F00DB5F38 /* om.pdf */,
+				770632581DC7370600EC4E66 /* 百分百.txt */,
+				7710D2731DB9C2F1000D2555 /* Default-568h@2x.png */,
+				7710D2741DB9C2F1000D2555 /* Default.png */,
+				7710D2751DB9C2F1000D2555 /* Default@2x.png */,
+				776DD2BF1DB8B0360084C951 /* Assets.xcassets */,
+				776DD2C11DB8B0360084C951 /* LaunchScreen.storyboard */,
+				776DD2C41DB8B0360084C951 /* Info.plist */,
+				776DD2BC1DB8B0360084C951 /* HKBookshelf.xcdatamodeld */,
 				776DD2B11DB8B0360084C951 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -141,6 +208,147 @@
 				776DD2DA1DB8B0360084C951 /* Info.plist */,
 			);
 			path = HKBookshelfUITests;
+			sourceTree = "<group>";
+		};
+		77985C741DB9C55E00CC394B /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				77985C841DB9C5A700CC394B /* Main.storyboard */,
+				77985C751DB9C55E00CC394B /* PagesViewController */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		77985C751DB9C55E00CC394B /* PagesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				77985C761DB9C58F00CC394B /* BookSource.h */,
+				77985C771DB9C58F00CC394B /* BookSource.m */,
+				77985C781DB9C58F00CC394B /* BookViewController.h */,
+				77985C791DB9C58F00CC394B /* BookViewController.m */,
+				77985C7A1DB9C58F00CC394B /* DataViewController.h */,
+				77985C7B1DB9C58F00CC394B /* DataViewController.m */,
+				77985C7D1DB9C58F00CC394B /* PDFScrollView.h */,
+				77985C7E1DB9C58F00CC394B /* PDFScrollView.m */,
+				77985CBB1DB9E46C00CC394B /* TiledPDFView.h */,
+				77985CBC1DB9E46C00CC394B /* TiledPDFView.m */,
+			);
+			path = PagesViewController;
+			sourceTree = "<group>";
+		};
+		77985C891DB9C5DA00CC394B /* General */ = {
+			isa = PBXGroup;
+			children = (
+				77985C8A1DB9C5DA00CC394B /* CommonBase */,
+				77985C921DB9C5DA00CC394B /* CustomUI */,
+				77985C931DB9C5DA00CC394B /* Extends */,
+				77985CA21DB9C5DA00CC394B /* Marco */,
+				77985CA51DB9C5DA00CC394B /* Model */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		77985C8A1DB9C5DA00CC394B /* CommonBase */ = {
+			isa = PBXGroup;
+			children = (
+				77985C8B1DB9C5DA00CC394B /* HKBaseJSONModel */,
+				77985C8C1DB9C5DA00CC394B /* HKNavigationController */,
+				77985C8F1DB9C5DA00CC394B /* HKViewController */,
+			);
+			path = CommonBase;
+			sourceTree = "<group>";
+		};
+		77985C8B1DB9C5DA00CC394B /* HKBaseJSONModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HKBaseJSONModel;
+			sourceTree = "<group>";
+		};
+		77985C8C1DB9C5DA00CC394B /* HKNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				77985C8D1DB9C5DA00CC394B /* HKNavigationController.h */,
+				77985C8E1DB9C5DA00CC394B /* HKNavigationController.m */,
+			);
+			path = HKNavigationController;
+			sourceTree = "<group>";
+		};
+		77985C8F1DB9C5DA00CC394B /* HKViewController */ = {
+			isa = PBXGroup;
+			children = (
+				77985C901DB9C5DA00CC394B /* HKViewController.h */,
+				77985C911DB9C5DA00CC394B /* HKViewController.m */,
+			);
+			path = HKViewController;
+			sourceTree = "<group>";
+		};
+		77985C921DB9C5DA00CC394B /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		77985C931DB9C5DA00CC394B /* Extends */ = {
+			isa = PBXGroup;
+			children = (
+				77985C941DB9C5DA00CC394B /* NSDate+HKExtends.h */,
+				77985C951DB9C5DA00CC394B /* NSDate+HKExtends.m */,
+				77985C961DB9C5DA00CC394B /* NSDictionary+HKExtends.h */,
+				77985C971DB9C5DA00CC394B /* NSDictionary+HKExtends.m */,
+				77985C981DB9C5DA00CC394B /* NSString+HKExtends.h */,
+				77985C991DB9C5DA00CC394B /* NSString+HKExtends.m */,
+				77985C9A1DB9C5DA00CC394B /* UIBarButtonItem+HKExtends.h */,
+				77985C9B1DB9C5DA00CC394B /* UIBarButtonItem+HKExtends.m */,
+				77985C9C1DB9C5DA00CC394B /* UIImage+HKExtends.h */,
+				77985C9D1DB9C5DA00CC394B /* UIImage+HKExtends.m */,
+				77985C9E1DB9C5DA00CC394B /* UILabel+HKExtends.h */,
+				77985C9F1DB9C5DA00CC394B /* UILabel+HKExtends.m */,
+				77985CA01DB9C5DA00CC394B /* UINavigationController+HKExtends.h */,
+				77985CA11DB9C5DA00CC394B /* UINavigationController+HKExtends.m */,
+			);
+			path = Extends;
+			sourceTree = "<group>";
+		};
+		77985CA21DB9C5DA00CC394B /* Marco */ = {
+			isa = PBXGroup;
+			children = (
+				77985CA31DB9C5DA00CC394B /* HKModelMarco.h */,
+				77985CA41DB9C5DA00CC394B /* HKViewMarco.h */,
+			);
+			path = Marco;
+			sourceTree = "<group>";
+		};
+		77985CA51DB9C5DA00CC394B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		77985CA61DB9C5DA00CC394B /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				77985CA71DB9C5DA00CC394B /* HKDelete */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		77985CA71DB9C5DA00CC394B /* HKDelete */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HKDelete;
+			sourceTree = "<group>";
+		};
+		77985CB71DB9C62A00CC394B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				77985CB81DB9C62A00CC394B /* AppDelegate.h */,
+				77985CB91DB9C62A00CC394B /* AppDelegate.m */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,12 +413,12 @@
 		776DD2A51DB8B0360084C951 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = HKY;
 				TargetAttributes = {
 					776DD2AC1DB8B0360084C951 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = PHQC575L44;
+						DevelopmentTeam = LJTDBM4U3C;
 						ProvisioningStyle = Automatic;
 					};
 					776DD2C81DB8B0360084C951 = {
@@ -252,9 +460,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7710D2781DB9C2F1000D2555 /* Default@2x.png in Resources */,
+				77985C851DB9C5A700CC394B /* Main.storyboard in Resources */,
 				776DD2C31DB8B0360084C951 /* LaunchScreen.storyboard in Resources */,
 				776DD2C01DB8B0360084C951 /* Assets.xcassets in Resources */,
-				776DD2BB1DB8B0360084C951 /* Main.storyboard in Resources */,
+				7710D2771DB9C2F1000D2555 /* Default.png in Resources */,
+				775395531DBDB93F00DB5F38 /* om.pdf in Resources */,
+				7710D2761DB9C2F1000D2555 /* Default-568h@2x.png in Resources */,
+				770632591DC7370600EC4E66 /* 百分百.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,10 +492,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77985CAE1DB9C5DA00CC394B /* NSString+HKExtends.m in Sources */,
+				77985CAB1DB9C5DA00CC394B /* HKViewController.m in Sources */,
 				776DD2BE1DB8B0360084C951 /* HKBookshelf.xcdatamodeld in Sources */,
-				776DD2B81DB8B0360084C951 /* ViewController.m in Sources */,
-				776DD2B51DB8B0360084C951 /* AppDelegate.m in Sources */,
+				77985CAF1DB9C5DA00CC394B /* UIBarButtonItem+HKExtends.m in Sources */,
+				77985CBA1DB9C62A00CC394B /* AppDelegate.m in Sources */,
+				77985CB11DB9C5DA00CC394B /* UILabel+HKExtends.m in Sources */,
+				77985CAD1DB9C5DA00CC394B /* NSDictionary+HKExtends.m in Sources */,
+				77985C811DB9C58F00CC394B /* DataViewController.m in Sources */,
+				77985CAA1DB9C5DA00CC394B /* HKNavigationController.m in Sources */,
+				77985CB21DB9C5DA00CC394B /* UINavigationController+HKExtends.m in Sources */,
+				77985C7F1DB9C58F00CC394B /* BookSource.m in Sources */,
 				776DD2B21DB8B0360084C951 /* main.m in Sources */,
+				77985C801DB9C58F00CC394B /* BookViewController.m in Sources */,
+				77985CAC1DB9C5DA00CC394B /* NSDate+HKExtends.m in Sources */,
+				77985C831DB9C58F00CC394B /* PDFScrollView.m in Sources */,
+				77985CB01DB9C5DA00CC394B /* UIImage+HKExtends.m in Sources */,
+				77985CBD1DB9E46C00CC394B /* TiledPDFView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,14 +544,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		776DD2B91DB8B0360084C951 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				776DD2BA1DB8B0360084C951 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		776DD2C11DB8B0360084C951 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -355,6 +573,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -377,7 +596,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -402,6 +621,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -418,7 +638,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -430,9 +650,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = PHQC575L44;
+				DEVELOPMENT_TEAM = LJTDBM4U3C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HKBookshelf/Vendor/HKDelete",
+				);
 				INFOPLIST_FILE = HKBookshelf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lab.HKBookshelf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -443,9 +669,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = PHQC575L44;
+				DEVELOPMENT_TEAM = LJTDBM4U3C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HKBookshelf/Vendor/HKDelete",
+				);
 				INFOPLIST_FILE = HKBookshelf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lab.HKBookshelf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -520,6 +752,7 @@
 				776DD2DF1DB8B0360084C951 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		776DD2E01DB8B0360084C951 /* Build configuration list for PBXNativeTarget "HKBookshelfTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +761,7 @@
 				776DD2E21DB8B0360084C951 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		776DD2E31DB8B0360084C951 /* Build configuration list for PBXNativeTarget "HKBookshelfUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +770,7 @@
 				776DD2E51DB8B0360084C951 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
