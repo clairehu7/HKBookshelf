@@ -10,5 +10,4 @@
 #import "HKViewController.h"
 @interface BookViewController : HKViewController <UIPageViewControllerDelegate>
 @property (nonatomic, strong) UIPageViewController *pageViewController;
-
 @end

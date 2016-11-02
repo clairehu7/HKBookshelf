@@ -6,7 +6,7 @@
 //  Copyright © 2016年 hukaiyin. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface NSString (HKExtends)
 
@@ -15,5 +15,5 @@
  * @param format 如@"yyyy-MM-dd HH:mm:ss"
  */
 + (NSString *)stringFromDate:(NSDate *)date withFormat:(NSString *)format;
-
+- (NSArray *)paginationWithAttributes:(NSDictionary *)attributes constrainedToSize:(CGSize)size;
 @end
