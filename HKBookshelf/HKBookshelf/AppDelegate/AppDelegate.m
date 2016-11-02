@@ -7,9 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "HKNavigationController.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong)HKNavigationController *nav;
 @end
 
 @implementation AppDelegate
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [_window setRootViewController:self.nav];
+    [_window makeKeyAndVisible];
     return YES;
 }
 
@@ -47,6 +52,16 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+}
+
+- (HKNavigationController *)nav {
+    if (!_nav) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIViewController *homeVC = [storyboard instantiateViewControllerWithIdentifier:@"homeVC"];
+        
+        _nav = [[HKNavigationController alloc]initWithRootViewController:homeVC];
+    }
+    return _nav;
 }
 
 

@@ -34,11 +34,11 @@
     // 构造NSAttributedString
     NSAttributedString * attributedString = [[NSAttributedString alloc] initWithString:self attributes:attributes];
     
-    //    以下方法耗时 基本再 0.5s 以内
+    // 以下方法耗时 基本再 0.5s 以内
     NSDate * date = [NSDate date];
     NSInteger rangeIndex = 0;
     do {
-        //TODO      需要根据具体字号对最小值就行分别设定
+        //TODO 需要根据具体字号对最小值就行分别设定
         unsigned long length = MIN(750, attributedString.length - rangeIndex);
         NSAttributedString * childString = [attributedString attributedSubstringFromRange:NSMakeRange(rangeIndex, length)];
         

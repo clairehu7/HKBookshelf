@@ -42,7 +42,7 @@
         [attributes setValue:paragraphStyle forKey:NSParagraphStyleAttributeName];
         self.attributes = [attributes copy];
         
-        self.rangeArray = [[self.txt paginationWithAttributes:self.attributes constrainedToSize:CGSizeMake([UIScreen mainScreen].bounds.size.width - 10 * 2, [UIScreen mainScreen].bounds.size.height - 30 * 2)] mutableCopy];
+        self.rangeArray = [[self.txt paginationWithAttributes:self.attributes constrainedToSize:CGSizeMake(TextViewFrame.size.width, TextViewFrame.size.height - 64)] mutableCopy];
     }
     return self;
 }
@@ -52,7 +52,7 @@
     if (index >= self.rangeArray.count) {
         return nil;
     }
-    
+
     TxtDataViewController *dataVC = [storyboard instantiateViewControllerWithIdentifier:@"TxtDataViewController"];
     dataVC.pageNumber = index + 1;
     

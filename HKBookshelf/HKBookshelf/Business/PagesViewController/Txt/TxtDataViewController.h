@@ -8,6 +8,7 @@
 
 #import "HKViewController.h"
 
+#define TextViewFrame CGRectMake(0, 20, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 20)
 @interface TxtDataViewController : HKViewController
 
 @property NSString *txt;

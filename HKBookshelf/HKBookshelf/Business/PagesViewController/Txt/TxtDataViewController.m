@@ -10,6 +10,7 @@
 
 @interface TxtDataViewController ()
 @property (nonatomic , strong)UITextView *textView;
+@property (nonatomic, strong) UILabel *label;
 @end
 
 @implementation TxtDataViewController
@@ -17,8 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.textView.typingAttributes = self.attributes;
-    self.textView.text = self.txt;
+    NSAttributedString *aStr = [[NSAttributedString alloc]initWithString:self.txt attributes:self.attributes];
+//    self.label.attributedText = aStr;
+    self.textView.attributedText = aStr;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,10 +32,22 @@
 
 - (UITextView *)textView {
     if (!_textView) {
-        _textView = [[UITextView alloc]initWithFrame:self.view.bounds];
+        _textView = [[UITextView alloc]initWithFrame:TextViewFrame];
+        _textView.editable = NO;
+        _textView.scrollEnabled = NO;
+        _textView.textContainerInset = UIEdgeInsetsMake(0,0, 0, 0);
         [self.view addSubview:_textView];
     }
     return _textView;
+}
+
+- (UILabel *)label {
+    if (!_label) {
+        _label = [[UILabel alloc]initWithFrame:TextViewFrame];
+        _label.numberOfLines = 0;
+        [self.view addSubview:_label];
+    }
+    return _label;
 }
 
 @end

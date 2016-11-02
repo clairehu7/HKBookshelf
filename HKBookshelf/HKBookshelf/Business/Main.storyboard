@@ -48,7 +48,7 @@
         <!--Navigation Controller-->
         <scene sceneID="wI4-6z-PES">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ERp-Yj-pjv" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ERp-Yj-pjv" customClass="HKNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RKa-vW-Nkf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -66,7 +66,7 @@
         <!--Home-->
         <scene sceneID="BUX-D8-Jju">
             <objects>
-                <viewController id="B5c-RF-2XX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeVC" id="B5c-RF-2XX" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="B3P-H3-5Ao"/>
                         <viewControllerLayoutGuide type="bottom" id="vav-Pk-cPD"/>
