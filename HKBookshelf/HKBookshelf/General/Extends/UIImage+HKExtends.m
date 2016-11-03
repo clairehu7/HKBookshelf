@@ -88,4 +88,18 @@
     return smallImage;
 }
 
+//传入 view,得到一张左右相反的截图
++ (UIImage *)captureView:(UIView *)view {
+    CGRect rect = view.bounds;
+    UIGraphicsBeginImageContextWithOptions(rect.size, YES, 0.0f);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGAffineTransform transform = CGAffineTransformMake(-1.0, 0.0, 0.0, 1.0, rect.size.width, 0.0);
+    CGContextConcatCTM(context,transform);
+    [view.layer renderInContext:context];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
 @end

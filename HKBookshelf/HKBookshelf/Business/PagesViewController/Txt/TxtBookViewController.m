@@ -10,8 +10,11 @@
 #import "TxtSource.h"
 #import "TxtDataViewController.h"
 
+#import "BookMenu.h"
+
 @interface TxtBookViewController ()
 @property (readonly , nonatomic, strong)TxtSource *source;
+@property (nonatomic ,strong)BookMenu *menu;
 @end
 
 @implementation TxtBookViewController
@@ -28,13 +31,23 @@
     self.navigationController.navigationBarHidden = YES;
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBarHidden = NO;
+
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 - (void)commonInit {
-    
+    [self loadPageViewControler];
+    [self addGesture];
+}
+
+- (void)loadPageViewControler {
     self.pageViewController = [[UIPageViewController alloc]initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     self.pageViewController.delegate = self;
     TxtDataViewController *startVC = [self.source viewControllerAtIndex:0 storyboard:self.storyboard];
@@ -44,6 +57,7 @@
                                      completion:NULL];
     
     self.pageViewController.dataSource = self.source;
+    self.pageViewController.doubleSided = YES;
     [self addChildViewController:self.pageViewController];
     [self.view addSubview:self.pageViewController.view];
     self.pageViewController.view.frame = self.view.bounds;
@@ -51,11 +65,32 @@
     self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
 }
 
+- (void)addGesture {
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self.menu
+                                                                         action:@selector(showAndHide)];
+    [self.view addGestureRecognizer:tap];
+}
+
+#pragma mark - Setters & Getters
+
 - (TxtSource *)source {
     if (!_source) {
         _source = [[TxtSource alloc]init];
     }
     return _source;
+}
+
+- (BookMenu *)menu {
+    if (!_menu) {
+        _menu = [[BookMenu alloc]init];
+        
+        __weak typeof(self)weakSelf = self;
+        _menu.backHandler = ^{
+            [weakSelf.navigationController popViewControllerAnimated:YES];
+        };
+        [self.view addSubview:_menu];
+    }
+    return _menu;
 }
 
 @end

@@ -26,4 +26,6 @@
 
 -(UIImage*)getSubImage:(CGRect)rect;
 
+//传入 view,得到一张左右相反的截图
++ (UIImage *)captureView:(UIView *)view;
 @end

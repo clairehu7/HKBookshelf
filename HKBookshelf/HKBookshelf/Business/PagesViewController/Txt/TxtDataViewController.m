@@ -36,6 +36,7 @@
         _textView.editable = NO;
         _textView.scrollEnabled = NO;
         _textView.textContainerInset = UIEdgeInsetsMake(0,0, 0, 0);
+//        _textView.backgroundColor = [UIColor blueColor];
         [self.view addSubview:_textView];
     }
     return _textView;

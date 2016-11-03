@@ -59,13 +59,13 @@
 
 -(void)restoreScale {
     // Called on orientation change.
-    // We need to zoom out and basically reset the scrollview to look right in two-page spline view.
+    // We need to zoom out and bas ically reset the scrollview to look right in two-page spline view.
     CGRect pageRect = CGPDFPageGetBoxRect( self.page, kCGPDFMediaBox );
     CGFloat yScale = self.view.frame.size.height/pageRect.size.height;
     CGFloat xScale = self.view.frame.size.width/pageRect.size.width;
     self.myScale = MIN( xScale, yScale );
     NSLog(@"%s self.myScale=%f",__PRETTY_FUNCTION__, self.myScale);
-    self.scrollView.bounds = self.view.bounds;
+    self.scrollView.frame = self.view.bounds;
     self.scrollView.zoomScale = 1.0;
     self.scrollView.PDFScale = self.myScale;
     self.scrollView.tiledPDFView.bounds = self.view.bounds;

@@ -14,4 +14,5 @@
 @property NSString *txt;
 @property NSUInteger pageNumber;
 @property NSMutableDictionary * attributes;
+
 @end
