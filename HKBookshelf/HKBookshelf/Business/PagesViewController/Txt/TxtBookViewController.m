@@ -15,6 +15,8 @@
 @interface TxtBookViewController ()
 @property (readonly , nonatomic, strong)TxtSource *source;
 @property (nonatomic ,strong)BookMenu *menu;
+@property (nonatomic, assign) BOOL showStatusBar;
+@property (nonatomic, strong) UIView *statusBackView;
 @end
 
 @implementation TxtBookViewController
@@ -42,7 +44,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (BOOL)prefersStatusBarHidden {
+    return !_showStatusBar;
+}
+
+
+
 - (void)commonInit {
+    _showStatusBar = NO;
     [self loadPageViewControler];
     [self addGesture];
 }
@@ -66,9 +75,18 @@
 }
 
 - (void)addGesture {
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self.menu
-                                                                         action:@selector(showAndHide)];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self
+                                                                         action:@selector(showMenuAndHide)];
     [self.view addGestureRecognizer:tap];
+}
+
+- (void)showMenuAndHide {
+    _showStatusBar = !_showStatusBar;
+    [self.menu showAndHide];
+    if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)]) {
+        [self prefersStatusBarHidden];
+        [self performSelector:@selector(setNeedsStatusBarAppearanceUpdate)];
+    }
 }
 
 #pragma mark - Setters & Getters

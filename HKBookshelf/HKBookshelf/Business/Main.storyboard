@@ -22,6 +22,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="书名" id="97O-H8-GnQ"/>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="omG-y8-F2Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

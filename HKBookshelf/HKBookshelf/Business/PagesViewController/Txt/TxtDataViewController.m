@@ -7,10 +7,12 @@
 //
 
 #import "TxtDataViewController.h"
+#import "UIColor+HKCExtends.h"
 
 @interface TxtDataViewController ()
 @property (nonatomic , strong)UITextView *textView;
 @property (nonatomic, strong) UILabel *label;
+@property (nonatomic, strong) UIColor *backgroundColor;
 @end
 
 @implementation TxtDataViewController
@@ -21,6 +23,7 @@
     NSAttributedString *aStr = [[NSAttributedString alloc]initWithString:self.txt attributes:self.attributes];
 //    self.label.attributedText = aStr;
     self.textView.attributedText = aStr;
+    self.backgroundColor = [UIColor colorFromRGBHex:0xBEEBC2];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,7 +39,6 @@
         _textView.editable = NO;
         _textView.scrollEnabled = NO;
         _textView.textContainerInset = UIEdgeInsetsMake(0,0, 0, 0);
-//        _textView.backgroundColor = [UIColor blueColor];
         [self.view addSubview:_textView];
     }
     return _textView;
@@ -49,6 +51,11 @@
         [self.view addSubview:_label];
     }
     return _label;
+}
+
+- (void)setBackgroundColor:(UIColor *)backgroundColor {
+    _backgroundColor = backgroundColor;
+    _textView.backgroundColor = self.backgroundColor;
 }
 
 @end

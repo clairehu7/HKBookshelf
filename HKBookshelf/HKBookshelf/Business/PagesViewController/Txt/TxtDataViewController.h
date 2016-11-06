@@ -13,6 +13,6 @@
 
 @property NSString *txt;
 @property NSUInteger pageNumber;
-@property NSMutableDictionary * attributes;
+@property NSMutableDictionary *attributes;
 
 @end

@@ -40,6 +40,7 @@
 		77985CB21DB9C5DA00CC394B /* UINavigationController+HKExtends.m in Sources */ = {isa = PBXBuildFile; fileRef = 77985CA11DB9C5DA00CC394B /* UINavigationController+HKExtends.m */; };
 		77985CBA1DB9C62A00CC394B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77985CB91DB9C62A00CC394B /* AppDelegate.m */; };
 		77AE13761DC9B8C300067015 /* BookMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AE13751DC9B8C300067015 /* BookMenu.m */; };
+		77C5AB191DCF56550089A6CA /* UIColor+HKCExtends.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C5AB181DCF56550089A6CA /* UIColor+HKCExtends.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,8 @@
 		77985CB91DB9C62A00CC394B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		77AE13741DC9B8C300067015 /* BookMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMenu.h; sourceTree = "<group>"; };
 		77AE13751DC9B8C300067015 /* BookMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMenu.m; sourceTree = "<group>"; };
+		77C5AB171DCF56550089A6CA /* UIColor+HKCExtends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HKCExtends.h"; sourceTree = "<group>"; };
+		77C5AB181DCF56550089A6CA /* UIColor+HKCExtends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HKCExtends.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,6 +349,8 @@
 				77985C9D1DB9C5DA00CC394B /* UIImage+HKExtends.m */,
 				77985C9E1DB9C5DA00CC394B /* UILabel+HKExtends.h */,
 				77985C9F1DB9C5DA00CC394B /* UILabel+HKExtends.m */,
+				77C5AB171DCF56550089A6CA /* UIColor+HKCExtends.h */,
+				77C5AB181DCF56550089A6CA /* UIColor+HKCExtends.m */,
 				77985CA01DB9C5DA00CC394B /* UINavigationController+HKExtends.h */,
 				77985CA11DB9C5DA00CC394B /* UINavigationController+HKExtends.m */,
 			);
@@ -544,6 +549,7 @@
 				77985CAD1DB9C5DA00CC394B /* NSDictionary+HKExtends.m in Sources */,
 				774067841DC870A20062A2B7 /* DataViewController.m in Sources */,
 				774067731DC86C650062A2B7 /* TxtSource.m in Sources */,
+				77C5AB191DCF56550089A6CA /* UIColor+HKCExtends.m in Sources */,
 				774067761DC86C7D0062A2B7 /* TxtDataViewController.m in Sources */,
 				774067831DC870A20062A2B7 /* BookViewController.m in Sources */,
 				774067891DC870BD0062A2B7 /* TxtBookViewController.m in Sources */,
