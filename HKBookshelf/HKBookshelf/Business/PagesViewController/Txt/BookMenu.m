@@ -12,7 +12,7 @@
 @interface BookMenu ()
 @property (nonatomic, assign)BOOL show;
 @end
-
+//8 11.5 13 21
 @implementation BookMenu
 
 - (instancetype)init {
@@ -30,7 +30,7 @@
 - (void)commonInit {
     self.backgroundColor = [UIColor whiteColor];
     UIImage *leftBarImage = [[UIImage imageNamed:@"nav_back_black"] imageWithTintColor:[UIColor grayColor] blendMode:kCGBlendModeDestinationIn];
-    UIButton *btn = [[UIButton alloc]initWithFrame:(CGRect){0,20,64,44}];
+    UIButton *btn = [[UIButton alloc]initWithFrame:(CGRect){0,20,30,44}];
     [btn setImage:leftBarImage forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:btn];

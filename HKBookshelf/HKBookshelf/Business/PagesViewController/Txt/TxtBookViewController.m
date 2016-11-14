@@ -16,7 +16,7 @@
 @property (readonly , nonatomic, strong)TxtSource *source;
 @property (nonatomic ,strong)BookMenu *menu;
 @property (nonatomic, assign) BOOL showStatusBar;
-@property (nonatomic, strong) UIView *statusBackView;
+
 @end
 
 @implementation TxtBookViewController
@@ -47,8 +47,6 @@
 - (BOOL)prefersStatusBarHidden {
     return !_showStatusBar;
 }
-
-
 
 - (void)commonInit {
     _showStatusBar = NO;

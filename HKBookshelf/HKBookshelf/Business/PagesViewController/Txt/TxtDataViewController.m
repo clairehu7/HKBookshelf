@@ -8,11 +8,14 @@
 
 #import "TxtDataViewController.h"
 #import "UIColor+HKCExtends.h"
+#import "HKViewMarco.h"
 
 @interface TxtDataViewController ()
 @property (nonatomic , strong)UITextView *textView;
 @property (nonatomic, strong) UILabel *label;
 @property (nonatomic, strong) UIColor *backgroundColor;
+@property (nonatomic, strong) UIView *statusBackView;
+
 @end
 
 @implementation TxtDataViewController
@@ -24,6 +27,7 @@
 //    self.label.attributedText = aStr;
     self.textView.attributedText = aStr;
     self.backgroundColor = [UIColor colorFromRGBHex:0xBEEBC2];
+    [self statusBackView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,6 +60,15 @@
 - (void)setBackgroundColor:(UIColor *)backgroundColor {
     _backgroundColor = backgroundColor;
     _textView.backgroundColor = self.backgroundColor;
+}
+
+- (UIView *)statusBackView {
+    if (!_statusBackView) {
+        _statusBackView = [[UIView alloc]initWithFrame:(CGRect){0,0,kScreenWidth,20}];
+        _statusBackView.backgroundColor = self.backgroundColor;
+        [self.view addSubview:_statusBackView];
+    }
+    return _statusBackView;
 }
 
 @end
