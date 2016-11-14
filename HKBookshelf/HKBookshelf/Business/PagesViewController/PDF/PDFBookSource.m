@@ -1,19 +1,19 @@
 //
-//  BookSource.m
+//  PDFBookSource.m
 //  HKBookshelf
 //
 //  Created by hukaiyin on 2016/10/21.
 //  Copyright © 2016年 HKY. All rights reserved.
 //
 
-#import "BookSource.h"
+#import "PDFBookSource.h"
 
-@interface BookSource ()
+@interface PDFBookSource ()
 @property CGPDFDocumentRef pdf;
 @property NSInteger numberOfPages;
 @end
 
-@implementation BookSource
+@implementation PDFBookSource
 
 - (void)dealloc {
     if (self.pdf !=NULL) {
@@ -34,14 +34,14 @@
     return self;
 }
 
-- (DataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard {
-    DataViewController *dataVC = [storyboard instantiateViewControllerWithIdentifier:@"DataViewController"];
+- (PDFDataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard {
+    PDFDataViewController *dataVC = [storyboard instantiateViewControllerWithIdentifier:@"PDFDataViewController"];
     dataVC.pageNumber = index + 1;
     dataVC.pdf = self.pdf;
     return dataVC;
 }
 
-- (NSUInteger)indexOfViewController:(DataViewController *)viewController {
+- (NSUInteger)indexOfViewController:(PDFDataViewController *)viewController {
     return viewController.pageNumber - 1;
 }
 
@@ -49,7 +49,7 @@
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
     
-    NSUInteger index = [self indexOfViewController:(DataViewController *)viewController];
+    NSUInteger index = [self indexOfViewController:(PDFDataViewController *)viewController];
     if ((index == 0)||(index == NSNotFound)) {
         return nil;
     }
@@ -60,7 +60,7 @@
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
    
-    NSUInteger index = [self indexOfViewController:(DataViewController *)viewController];
+    NSUInteger index = [self indexOfViewController:(PDFDataViewController *)viewController];
     if (index == NSNotFound) {
         return nil;
     }

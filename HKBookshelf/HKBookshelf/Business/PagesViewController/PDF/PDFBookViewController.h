@@ -8,6 +8,6 @@
 
 
 #import "HKViewController.h"
-@interface BookViewController : HKViewController <UIPageViewControllerDelegate>
+@interface PDFBookViewController : HKViewController <UIPageViewControllerDelegate>
 @property (nonatomic, strong) UIPageViewController *pageViewController;
 @end

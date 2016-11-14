@@ -6,17 +6,17 @@
 //  Copyright © 2016年 HKY. All rights reserved.
 //
 
-#import "BookViewController.h"
-#import "BookSource.h"
-#import "DataViewController.h"
+#import "PDFBookViewController.h"
+#import "PDFBookSource.h"
+#import "PDFDataViewController.h"
 
-@interface BookViewController () 
-@property (readonly, nonatomic, strong) BookSource *bookSource;
+@interface PDFBookViewController () 
+@property (readonly, nonatomic, strong) PDFBookSource *PDFBookSource;
 @end
 
-@implementation BookViewController
+@implementation PDFBookViewController
 
-@synthesize bookSource = _bookSource;
+@synthesize PDFBookSource = _PDFBookSource;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,13 +34,13 @@
  
     self.pageViewController = [[UIPageViewController alloc]initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     self.pageViewController.delegate = self;
-    DataViewController *startVC = [self.bookSource viewControllerAtIndex:0 storyboard:self.storyboard];
+    PDFDataViewController *startVC = [self.PDFBookSource viewControllerAtIndex:0 storyboard:self.storyboard];
     [self.pageViewController setViewControllers:@[startVC]
                                       direction:UIPageViewControllerNavigationDirectionForward
                                        animated:NO
                                      completion:NULL];
     
-    self.pageViewController.dataSource = self.bookSource;
+    self.pageViewController.dataSource = self.PDFBookSource;
     [self addChildViewController:self.pageViewController];
     [self.view addSubview:self.pageViewController.view];
     self.pageViewController.view.frame = self.view.bounds;
@@ -65,15 +65,15 @@
     }
     
     // In landscape orientation: Set set the spine location to "mid" and the page view controller's view controllers array to contain two view controllers. If the current page is even, set it to contain the current and next view controllers; if it is odd, set the array to contain the previous and current view controllers.
-    DataViewController *currentViewController = self.pageViewController.viewControllers[0];
+    PDFDataViewController *currentViewController = self.pageViewController.viewControllers[0];
     NSArray *viewControllers = nil;
     
-    NSUInteger indexOfCurrentViewController = [self.bookSource indexOfViewController:currentViewController];
+    NSUInteger indexOfCurrentViewController = [self.PDFBookSource indexOfViewController:currentViewController];
     if (indexOfCurrentViewController == 0 || indexOfCurrentViewController % 2 == 0) {
-        UIViewController *nextViewController = [self.bookSource pageViewController:self.pageViewController viewControllerAfterViewController:currentViewController];
+        UIViewController *nextViewController = [self.PDFBookSource pageViewController:self.pageViewController viewControllerAfterViewController:currentViewController];
         viewControllers = @[currentViewController, nextViewController];
     } else {
-        UIViewController *previousViewController = [self.bookSource pageViewController:self.pageViewController viewControllerBeforeViewController:currentViewController];
+        UIViewController *previousViewController = [self.PDFBookSource pageViewController:self.pageViewController viewControllerBeforeViewController:currentViewController];
         viewControllers = @[previousViewController, currentViewController];
     }
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:NULL];
@@ -84,11 +84,11 @@
 
 #pragma mark - Setters & Getters
 
-- (BookSource *)bookSource {
-    if (!_bookSource) {
-        _bookSource = [[BookSource alloc]init];
+- (PDFBookSource *)PDFBookSource {
+    if (!_PDFBookSource) {
+        _PDFBookSource = [[PDFBookSource alloc]init];
     }
-    return _bookSource;
+    return _PDFBookSource;
 }
 
 @end

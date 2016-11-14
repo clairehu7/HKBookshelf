@@ -14,9 +14,9 @@
 		7710D2781DB9C2F1000D2555 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7710D2751DB9C2F1000D2555 /* Default@2x.png */; };
 		774067731DC86C650062A2B7 /* TxtSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 774067721DC86C650062A2B7 /* TxtSource.m */; };
 		774067761DC86C7D0062A2B7 /* TxtDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774067751DC86C7D0062A2B7 /* TxtDataViewController.m */; };
-		774067821DC870A20062A2B7 /* BookSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 774067791DC870A20062A2B7 /* BookSource.m */; };
-		774067831DC870A20062A2B7 /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7740677B1DC870A20062A2B7 /* BookViewController.m */; };
-		774067841DC870A20062A2B7 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7740677D1DC870A20062A2B7 /* DataViewController.m */; };
+		774067821DC870A20062A2B7 /* PDFBookSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 774067791DC870A20062A2B7 /* PDFBookSource.m */; };
+		774067831DC870A20062A2B7 /* PDFBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7740677B1DC870A20062A2B7 /* PDFBookViewController.m */; };
+		774067841DC870A20062A2B7 /* PDFDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7740677D1DC870A20062A2B7 /* PDFDataViewController.m */; };
 		774067851DC870A20062A2B7 /* PDFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7740677F1DC870A20062A2B7 /* PDFScrollView.m */; };
 		774067861DC870A20062A2B7 /* TiledPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 774067811DC870A20062A2B7 /* TiledPDFView.m */; };
 		774067891DC870BD0062A2B7 /* TxtBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774067881DC870BD0062A2B7 /* TxtBookViewController.m */; };
@@ -70,12 +70,12 @@
 		774067721DC86C650062A2B7 /* TxtSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TxtSource.m; sourceTree = "<group>"; };
 		774067741DC86C7D0062A2B7 /* TxtDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TxtDataViewController.h; sourceTree = "<group>"; };
 		774067751DC86C7D0062A2B7 /* TxtDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TxtDataViewController.m; sourceTree = "<group>"; };
-		774067781DC870A20062A2B7 /* BookSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookSource.h; sourceTree = "<group>"; };
-		774067791DC870A20062A2B7 /* BookSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookSource.m; sourceTree = "<group>"; };
-		7740677A1DC870A20062A2B7 /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
-		7740677B1DC870A20062A2B7 /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
-		7740677C1DC870A20062A2B7 /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
-		7740677D1DC870A20062A2B7 /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		774067781DC870A20062A2B7 /* PDFBookSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFBookSource.h; sourceTree = "<group>"; };
+		774067791DC870A20062A2B7 /* PDFBookSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFBookSource.m; sourceTree = "<group>"; };
+		7740677A1DC870A20062A2B7 /* PDFBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFBookViewController.h; sourceTree = "<group>"; };
+		7740677B1DC870A20062A2B7 /* PDFBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFBookViewController.m; sourceTree = "<group>"; };
+		7740677C1DC870A20062A2B7 /* PDFDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFDataViewController.h; sourceTree = "<group>"; };
+		7740677D1DC870A20062A2B7 /* PDFDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFDataViewController.m; sourceTree = "<group>"; };
 		7740677E1DC870A20062A2B7 /* PDFScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFScrollView.h; sourceTree = "<group>"; };
 		7740677F1DC870A20062A2B7 /* PDFScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFScrollView.m; sourceTree = "<group>"; };
 		774067801DC870A20062A2B7 /* TiledPDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledPDFView.h; sourceTree = "<group>"; };
@@ -178,12 +178,12 @@
 		774067771DC870A20062A2B7 /* PDF */ = {
 			isa = PBXGroup;
 			children = (
-				774067781DC870A20062A2B7 /* BookSource.h */,
-				774067791DC870A20062A2B7 /* BookSource.m */,
-				7740677A1DC870A20062A2B7 /* BookViewController.h */,
-				7740677B1DC870A20062A2B7 /* BookViewController.m */,
-				7740677C1DC870A20062A2B7 /* DataViewController.h */,
-				7740677D1DC870A20062A2B7 /* DataViewController.m */,
+				774067781DC870A20062A2B7 /* PDFBookSource.h */,
+				774067791DC870A20062A2B7 /* PDFBookSource.m */,
+				7740677A1DC870A20062A2B7 /* PDFBookViewController.h */,
+				7740677B1DC870A20062A2B7 /* PDFBookViewController.m */,
+				7740677C1DC870A20062A2B7 /* PDFDataViewController.h */,
+				7740677D1DC870A20062A2B7 /* PDFDataViewController.m */,
 				7740677E1DC870A20062A2B7 /* PDFScrollView.h */,
 				7740677F1DC870A20062A2B7 /* PDFScrollView.m */,
 				774067801DC870A20062A2B7 /* TiledPDFView.h */,
@@ -547,13 +547,13 @@
 				77985CBA1DB9C62A00CC394B /* AppDelegate.m in Sources */,
 				77985CB11DB9C5DA00CC394B /* UILabel+HKExtends.m in Sources */,
 				77985CAD1DB9C5DA00CC394B /* NSDictionary+HKExtends.m in Sources */,
-				774067841DC870A20062A2B7 /* DataViewController.m in Sources */,
+				774067841DC870A20062A2B7 /* PDFDataViewController.m in Sources */,
 				774067731DC86C650062A2B7 /* TxtSource.m in Sources */,
 				77C5AB191DCF56550089A6CA /* UIColor+HKCExtends.m in Sources */,
 				774067761DC86C7D0062A2B7 /* TxtDataViewController.m in Sources */,
-				774067831DC870A20062A2B7 /* BookViewController.m in Sources */,
+				774067831DC870A20062A2B7 /* PDFBookViewController.m in Sources */,
 				774067891DC870BD0062A2B7 /* TxtBookViewController.m in Sources */,
-				774067821DC870A20062A2B7 /* BookSource.m in Sources */,
+				774067821DC870A20062A2B7 /* PDFBookSource.m in Sources */,
 				77985CAA1DB9C5DA00CC394B /* HKNavigationController.m in Sources */,
 				77985CB21DB9C5DA00CC394B /* UINavigationController+HKExtends.m in Sources */,
 				775F2AF31DCB5F22003AAAD8 /* BackViewController.m in Sources */,

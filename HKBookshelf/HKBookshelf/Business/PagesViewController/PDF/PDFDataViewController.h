@@ -1,5 +1,5 @@
 //
-//  DataViewController.h
+//  PDFDataViewController.h
 //  HKBookshelf
 //
 //  Created by hukaiyin on 2016/10/21.
@@ -9,7 +9,7 @@
 #import "HKViewController.h"
 #import "PDFScrollView.h"
 
-@interface DataViewController : HKViewController
+@interface PDFDataViewController : HKViewController
 
 @property (strong,nonatomic) PDFScrollView *scrollView;
 

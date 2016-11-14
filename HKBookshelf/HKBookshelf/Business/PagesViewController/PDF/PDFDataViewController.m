@@ -1,14 +1,14 @@
 //
-//  DataViewController.m
+//  PDFDataViewController.m
 //  HKBookshelf
 //
 //  Created by hukaiyin on 2016/10/21.
 //  Copyright © 2016年 HKY. All rights reserved.
 //
 
-#import "DataViewController.h"
+#import "PDFDataViewController.h"
 
-@implementation DataViewController
+@implementation PDFDataViewController
 -(void) dealloc {
     if( self.page != NULL ) CGPDFPageRelease( self.page );
 }

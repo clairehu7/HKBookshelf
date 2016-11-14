@@ -11,7 +11,7 @@
         <!--书名-->
         <scene sceneID="aEn-6B-Vfq">
             <objects>
-                <viewController title="书名" id="xTZ-cI-Ct8" customClass="BookViewController" sceneMemberID="viewController">
+                <viewController title="书名" id="xTZ-cI-Ct8" customClass="PDFBookViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RKw-g1-Muk"/>
                         <viewControllerLayoutGuide type="bottom" id="RuO-nC-kh7"/>
@@ -31,7 +31,7 @@
         <!--Data View Controller-->
         <scene sceneID="e4Z-j5-W8Z">
             <objects>
-                <viewController storyboardIdentifier="DataViewController" id="qrg-pc-P81" customClass="DataViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PDFDataViewController" id="qrg-pc-P81" customClass="PDFDataViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FxC-z7-Ozp"/>
                         <viewControllerLayoutGuide type="bottom" id="jEy-Rv-qPr"/>
