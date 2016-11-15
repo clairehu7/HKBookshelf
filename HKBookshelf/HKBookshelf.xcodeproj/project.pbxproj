@@ -20,7 +20,6 @@
 		7738BE4A1DDADF7600800CB9 /* PDFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7738BE391DDADF7600800CB9 /* PDFScrollView.m */; };
 		7738BE4B1DDADF7600800CB9 /* TiledPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7738BE3B1DDADF7600800CB9 /* TiledPDFView.m */; };
 		7738BE4C1DDADF7600800CB9 /* BookMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 7738BE3E1DDADF7600800CB9 /* BookMenu.m */; };
-		7738BE4D1DDADF7600800CB9 /* TxtBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7738BE401DDADF7600800CB9 /* TxtBookViewController.m */; };
 		7738BE4E1DDADF7600800CB9 /* TxtDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7738BE421DDADF7600800CB9 /* TxtDataViewController.m */; };
 		7738BE4F1DDADF7600800CB9 /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7738BE431DDADF7600800CB9 /* BookViewController.m */; };
 		775395531DBDB93F00DB5F38 /* om.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 775395521DBDB93F00DB5F38 /* om.pdf */; };
@@ -83,8 +82,6 @@
 		7738BE3B1DDADF7600800CB9 /* TiledPDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledPDFView.m; sourceTree = "<group>"; };
 		7738BE3D1DDADF7600800CB9 /* BookMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMenu.h; sourceTree = "<group>"; };
 		7738BE3E1DDADF7600800CB9 /* BookMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMenu.m; sourceTree = "<group>"; };
-		7738BE3F1DDADF7600800CB9 /* TxtBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TxtBookViewController.h; sourceTree = "<group>"; };
-		7738BE401DDADF7600800CB9 /* TxtBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TxtBookViewController.m; sourceTree = "<group>"; };
 		7738BE411DDADF7600800CB9 /* TxtDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TxtDataViewController.h; sourceTree = "<group>"; };
 		7738BE421DDADF7600800CB9 /* TxtDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TxtDataViewController.m; sourceTree = "<group>"; };
 		7738BE431DDADF7600800CB9 /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
@@ -216,8 +213,6 @@
 			children = (
 				7738BE3D1DDADF7600800CB9 /* BookMenu.h */,
 				7738BE3E1DDADF7600800CB9 /* BookMenu.m */,
-				7738BE3F1DDADF7600800CB9 /* TxtBookViewController.h */,
-				7738BE401DDADF7600800CB9 /* TxtBookViewController.m */,
 				7738BE411DDADF7600800CB9 /* TxtDataViewController.h */,
 				7738BE421DDADF7600800CB9 /* TxtDataViewController.m */,
 			);
@@ -581,7 +576,6 @@
 				7738BE4B1DDADF7600800CB9 /* TiledPDFView.m in Sources */,
 				7738BE471DDADF7600800CB9 /* TxtSource.m in Sources */,
 				77985CB11DB9C5DA00CC394B /* UILabel+HKExtends.m in Sources */,
-				7738BE4D1DDADF7600800CB9 /* TxtBookViewController.m in Sources */,
 				7738BE491DDADF7600800CB9 /* PDFDataViewController.m in Sources */,
 				77985CAD1DB9C5DA00CC394B /* NSDictionary+HKExtends.m in Sources */,
 				77C5AB191DCF56550089A6CA /* UIColor+HKCExtends.m in Sources */,

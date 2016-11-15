@@ -75,7 +75,7 @@
 - (BookSource *)bookSource {
     if (!_bookSource) {
         //TODO: 判断文件类型
-        _bookSource = [BookSourceManager sourceWithType:BookTypePDF];
+        _bookSource = [BookSourceManager sourceWithType:BookTypeTxt];
     }
     return _bookSource;
 }
