@@ -9,6 +9,7 @@
 #import "PDFDataViewController.h"
 
 @implementation PDFDataViewController
+
 -(void) dealloc {
     if( self.page != NULL ) CGPDFPageRelease( self.page );
 }

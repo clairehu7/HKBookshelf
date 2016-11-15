@@ -8,26 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--书名-->
-        <scene sceneID="aEn-6B-Vfq">
-            <objects>
-                <viewController title="书名" id="xTZ-cI-Ct8" customClass="PDFBookViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RKw-g1-Muk"/>
-                        <viewControllerLayoutGuide type="bottom" id="RuO-nC-kh7"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="MNv-xW-ep8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="书名" id="97O-H8-GnQ"/>
-                    <nil key="simulatedStatusBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="omG-y8-F2Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3078" y="582"/>
-        </scene>
         <!--Data View Controller-->
         <scene sceneID="e4Z-j5-W8Z">
             <objects>
@@ -62,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H3s-kp-CfD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1353" y="-28"/>
+            <point key="canvasLocation" x="3153" y="-58"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wI4-6z-PES">
@@ -94,36 +74,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLU-gL-xMZ">
-                                <rect key="frame" x="155" y="98" width="64" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="qY7-j7-Djw"/>
-                                    <constraint firstAttribute="width" constant="64" id="uNV-vz-3zz"/>
-                                </constraints>
-                                <state key="normal" title="PDF"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Boz-1U-grh">
+                                <rect key="frame" x="164" y="265" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="xTZ-cI-Ct8" kind="show" id="aP4-OU-39w"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7m0-kF-71D">
-                                <rect key="frame" x="155" y="193" width="64" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="9kp-WO-E7I"/>
-                                    <constraint firstAttribute="height" constant="64" id="dyg-Ap-3Mj"/>
-                                </constraints>
-                                <state key="normal" title="txt"/>
-                                <connections>
-                                    <segue destination="vwH-BW-knt" kind="show" id="FHX-ZN-WTX"/>
+                                    <segue destination="uq4-H3-fXT" kind="show" id="KTF-JS-uPh"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="WLU-gL-xMZ" firstAttribute="top" secondItem="B3P-H3-5Ao" secondAttribute="bottom" constant="34" id="QF4-Ys-PWS"/>
-                            <constraint firstItem="7m0-kF-71D" firstAttribute="top" secondItem="WLU-gL-xMZ" secondAttribute="bottom" constant="31" id="dy3-qC-AeQ"/>
-                            <constraint firstItem="7m0-kF-71D" firstAttribute="centerX" secondItem="qLl-bB-GjT" secondAttribute="centerX" id="hkC-aV-idY"/>
-                            <constraint firstItem="WLU-gL-xMZ" firstAttribute="centerX" secondItem="qLl-bB-GjT" secondAttribute="centerX" id="nRG-id-fKp"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="84O-gc-hS0"/>
                 </viewController>
@@ -131,23 +91,23 @@
             </objects>
             <point key="canvasLocation" x="2221.5999999999999" y="785.75712143928047"/>
         </scene>
-        <!--Txt Book View Controller-->
-        <scene sceneID="oDG-3y-zfs">
+        <!--Book View Controller-->
+        <scene sceneID="SR5-P8-MWZ">
             <objects>
-                <viewController id="vwH-BW-knt" customClass="TxtBookViewController" sceneMemberID="viewController">
+                <viewController id="uq4-H3-fXT" customClass="BookViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SRc-4e-Ddl"/>
-                        <viewControllerLayoutGuide type="bottom" id="c0Y-FR-8Sn"/>
+                        <viewControllerLayoutGuide type="top" id="MZk-Uk-HXi"/>
+                        <viewControllerLayoutGuide type="bottom" id="bwv-0g-ik1"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="IuF-82-5ar">
+                    <view key="view" contentMode="scaleToFill" id="EHz-WA-RiC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wnl-k1-CBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RhR-Sl-tQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3078" y="1248"/>
+            <point key="canvasLocation" x="3042" y="786"/>
         </scene>
         <!--Txt Data View Controller-->
         <scene sceneID="L9p-IG-j4N">

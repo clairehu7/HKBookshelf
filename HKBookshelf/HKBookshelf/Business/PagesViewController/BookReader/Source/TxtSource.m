@@ -11,7 +11,6 @@
 #import "BackViewController.h"
 
 @interface TxtSource ()
-@property NSUInteger numberOfPages;
 @property NSString *txt;
 @property NSArray *rangeArray;
 @property NSMutableDictionary * attributes;
@@ -64,44 +63,6 @@
     return viewController.pageNumber - 1;
 }
 
-#pragma mark - UIPageViewControllerDataSource
 
-- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
-    
-    if ([viewController isKindOfClass:[TxtDataViewController class]]) {
-        self.currentViewController = viewController;
-        BackViewController *backViewController = [_currentViewController.storyboard instantiateViewControllerWithIdentifier:@"BackViewController"];
-        [backViewController updateWithViewController:viewController];
-        return backViewController;
-    }
-    
-    NSUInteger index = [self indexOfViewController:(TxtDataViewController *)_currentViewController];
-    if ((index == 0)||(index == NSNotFound)) {
-        return nil;
-    }
-    index --;
-    return [self viewControllerAtIndex:index storyboard:_currentViewController.storyboard];
-}
-
-- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
-    
-    if([viewController isKindOfClass:[TxtDataViewController class]]) {
-        self.currentViewController = viewController;
-        
-        BackViewController *backViewController = [_currentViewController.storyboard instantiateViewControllerWithIdentifier:@"BackViewController"];
-        [backViewController updateWithViewController:viewController];
-        return backViewController;
-    }
-    
-    NSUInteger index = [self indexOfViewController:(TxtDataViewController *)_currentViewController];
-    if (index == NSNotFound) {
-        return nil;
-    }
-    
-    index++;
-    if (index == self.numberOfPages) {
-        return nil;
-    }
-    return [self viewControllerAtIndex:index storyboard:_currentViewController.storyboard];}
 
 @end

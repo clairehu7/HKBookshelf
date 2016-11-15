@@ -57,7 +57,7 @@
 - (void)loadPageViewControler {
     self.pageViewController = [[UIPageViewController alloc]initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     self.pageViewController.delegate = self;
-    TxtDataViewController *startVC = [self.source viewControllerAtIndex:0 storyboard:self.storyboard];
+    TxtDataViewController *startVC = (TxtDataViewController *)[self.source viewControllerAtIndex:0 storyboard:self.storyboard];
     [self.pageViewController setViewControllers:@[startVC]
                                       direction:UIPageViewControllerNavigationDirectionForward
                                        animated:NO
