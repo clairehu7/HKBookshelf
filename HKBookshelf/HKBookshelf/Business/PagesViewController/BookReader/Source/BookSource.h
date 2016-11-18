@@ -14,15 +14,17 @@ typedef NS_ENUM(NSUInteger,BookType) {
 };
 
 @interface BookSource : NSObject<UIPageViewControllerDataSource>
+
 @property (nonatomic, assign) NSUInteger numberOfPages;
+@property (nonatomic, assign) BookType type;
+
 //传入页码，返回应该显示的 vc
 - (UIViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
+
 //传入 vc，返回页码
 - (NSUInteger)indexOfViewController:(UIViewController *)viewController;
 @end
 
 @interface BookSourceManager : NSObject
-
-+ (BookSource *)sourceWithType:(BookType)type;
-
++ (BookSource *)sourceForResource:(NSString *)name withExtension:(NSString *)ext;
 @end

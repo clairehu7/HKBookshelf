@@ -32,8 +32,8 @@
         tiledLayer.levelsOfDetailBias = 3;
         tiledLayer.tileSize = CGSizeMake(512.0, 512.0);
         self.myScale = scale;
-        self.layer.borderColor = [UIColor blackColor].CGColor;
-        self.layer.borderWidth = 10;
+//        self.layer.borderColor = [UIColor redColor].CGColor;
+//        self.layer.borderWidth = 10;
     }
     return self;
 }
@@ -51,7 +51,6 @@
     CGContextScaleCTM(ctx, self.myScale, self.myScale);
     CGContextDrawPDFPage(ctx, self.pdfPage);
     CGContextRestoreGState(ctx);
-    
 }
 
 + (Class)layerClass {

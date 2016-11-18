@@ -17,8 +17,7 @@
 @synthesize backgroundImageView=_backgroundImageView, tiledPDFView=_tiledPDFView, oldTiledPDFView=_oldTiledPDFView;
 
 
-- (id)initWithCoder:(NSCoder *)coder
-{
+- (id)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
         [self initialize];
@@ -37,15 +36,15 @@
     NSLog(@"%s",__PRETTY_FUNCTION__);
     self.decelerationRate = UIScrollViewDecelerationRateFast;
     self.delegate = self;
-    self.layer.borderColor = [UIColor lightGrayColor].CGColor;
-    self.layer.borderWidth = 5;
+//    self.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.backgroundColor = [UIColor lightGrayColor];
+//    self.layer.borderWidth = 5;
     self.minimumZoomScale = .25;
     self.maximumZoomScale = 5;
 }
 
 
-- (void)setPDFPage:(CGPDFPageRef)PDFPage;
-{
+- (void)setPDFPage:(CGPDFPageRef)PDFPage {
     if( PDFPage != NULL ) CGPDFPageRetain(PDFPage);
     if( _PDFPage != NULL ) CGPDFPageRelease(_PDFPage);
     _PDFPage = PDFPage;
@@ -75,8 +74,7 @@
 
 // Use layoutSubviews to center the PDF page in the view.
 
-- (void)layoutSubviews
-{
+- (void)layoutSubviews {
     [super layoutSubviews];
     
     //NSLog(@"%s bounds: %@",__PRETTY_FUNCTION__,NSStringFromCGRect(self.bounds));

@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.page = CGPDFDocumentGetPage(self.pdf, self.pageNumber );
+    self.page = CGPDFDocumentGetPage(self.pdf, self.pageNumber);
     NSLog(@"self.page==NULL? %@",self.page==NULL?@"yes":@"no");
     
     if( self.page != NULL ) CGPDFPageRetain( self.page );
@@ -69,7 +69,8 @@
     self.scrollView.frame = self.view.bounds;
     self.scrollView.zoomScale = 1.0;
     self.scrollView.PDFScale = self.myScale;
-    self.scrollView.tiledPDFView.bounds = self.view.bounds;
+    self.scrollView.tiledPDFView.bounds = (CGRect){0,0,self.view.bounds.size.width,self.view.bounds.size.height - 64
+    };
     self.scrollView.tiledPDFView.myScale = self.myScale;
     [self.scrollView.tiledPDFView.layer setNeedsDisplay];
 }

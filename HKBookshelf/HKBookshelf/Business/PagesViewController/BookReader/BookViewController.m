@@ -16,12 +16,14 @@
 @property (readonly, nonatomic, strong) BookSource *bookSource;
 @property (nonatomic, strong) UIPageViewController *pageViewController;
 
-@property (nonatomic ,strong)BookMenu *menu;
-@property (nonatomic, assign) BOOL showStatusBar;
+@property (nonatomic, assign) BOOL showStatusBar;/**<是否显示电池栏*/
+@property (nonatomic, strong) BookMenu *menu;
+@property (nonatomic, assign) BookType bookType;
 @end
 
 @implementation BookViewController
 @synthesize bookSource = _bookSource;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -35,6 +37,7 @@
 
 - (void)commonInit {
     _showStatusBar = NO;
+    [self bookSource];
     [self pageViewController];
     [self addGesture];
 }
@@ -74,15 +77,31 @@
 
 - (BookSource *)bookSource {
     if (!_bookSource) {
-        //TODO: 判断文件类型
-        _bookSource = [BookSourceManager sourceWithType:BookTypeTxt];
+        _bookSource = [BookSourceManager sourceForResource:@"one" withExtension:@"txt"];
+        self.bookType = _bookSource.type;
     }
     return _bookSource;
 }
 
 - (UIPageViewController *)pageViewController {
     if (!_pageViewController) {
-        _pageViewController = [[UIPageViewController alloc]initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+        switch (self.bookType) {
+            case BookTypePDF: {
+                _pageViewController = [[UIPageViewController alloc]initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll
+                                                                     navigationOrientation:UIPageViewControllerNavigationOrientationVertical
+                                                                                   options:nil];
+                break;
+            }
+            case BookTypeTxt: {
+                _pageViewController = [[UIPageViewController alloc]initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl
+                                                                     navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal
+                                                                                   options:nil];
+                break;
+            }
+            default:
+                break;
+        }
+        
         _pageViewController.delegate = self;
         _pageViewController.dataSource = self.bookSource;
         

@@ -13,12 +13,10 @@
 @implementation BookSource
 
 - (UIViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard {
-    //必须在子类里重写这一方法
     return [[UIViewController alloc]init];
 }
 
 - (NSUInteger)indexOfViewController:(UIViewController *)viewController {
-    //必须在子类里重写这一方法
     return 0;
 }
 
@@ -49,6 +47,33 @@
 
 @implementation BookSourceManager
 
++ (BookSource *)sourceForResource:(NSString *)name withExtension:(NSString *)ext {
+    
+    BookType type;
+    
+    NSArray *items = @[@"pdf", @"PDF", @"txt",@"TXT"];
+    NSUInteger  index = [items indexOfObject:ext];
+    switch (index) {
+        case 0:
+        case 1: {
+            //pdf PDF
+            type = BookTypePDF;
+            break;
+        }
+        case 2:{
+            //txt TXT
+            type = BookTypeTxt;
+            break;
+        }
+            
+        default:
+            break;
+    }
+    
+    BookSource *source = [self sourceWithType:type];
+    return source;
+}
+
 + (BookSource *)sourceWithType:(BookType)type {
     BookSource *source;
     switch (type) {
@@ -63,6 +88,7 @@
         default:
             break;
     }
+    source.type = type;
     return source;
 }
 @end
