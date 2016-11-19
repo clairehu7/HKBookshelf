@@ -96,6 +96,7 @@
                 _pageViewController = [[UIPageViewController alloc]initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl
                                                                      navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal
                                                                                    options:nil];
+                _pageViewController.doubleSided = YES;
                 break;
             }
             default:

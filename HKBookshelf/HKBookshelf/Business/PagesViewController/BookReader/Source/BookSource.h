@@ -23,6 +23,9 @@ typedef NS_ENUM(NSUInteger,BookType) {
 
 //传入 vc，返回页码
 - (NSUInteger)indexOfViewController:(UIViewController *)viewController;
+
+- (UIViewController *)dataSourcePageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController;
+- (UIViewController *)dataSourcePageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController;
 @end
 
 @interface BookSourceManager : NSObject

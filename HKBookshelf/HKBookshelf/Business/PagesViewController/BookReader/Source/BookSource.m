@@ -12,6 +12,9 @@
 
 @implementation BookSource
 
+
+#pragma mark - 
+
 - (UIViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard {
     return [[UIViewController alloc]init];
 }
@@ -20,9 +23,7 @@
     return 0;
 }
 
-#pragma mark - UIPageViewControllerDataSource
-
-- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
+- (UIViewController *)dataSourcePageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
     NSUInteger index = [self indexOfViewController:viewController];
     if ((index == 0)||(index == NSNotFound)) {
         return nil;
@@ -31,7 +32,7 @@
     return [self viewControllerAtIndex:index storyboard:viewController.storyboard];
 }
 
-- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
+- (UIViewController *)dataSourcePageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
     NSUInteger index = [self indexOfViewController:viewController];
     if (index == NSNotFound) {
         return nil;
@@ -41,6 +42,18 @@
         return nil;
     }
     return [self viewControllerAtIndex:index storyboard:viewController.storyboard];
+}
+
+#pragma mark - UIPageViewControllerDataSource
+
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
+    UIViewController *vc = [self dataSourcePageViewController:pageViewController viewControllerBeforeViewController:viewController];
+    return vc;
+}
+
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
+    UIViewController *vc = [self dataSourcePageViewController:pageViewController viewControllerAfterViewController:viewController];
+    return vc;
 }
 
 @end

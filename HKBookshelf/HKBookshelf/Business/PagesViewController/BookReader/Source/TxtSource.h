@@ -9,7 +9,7 @@
 #import "TxtDataViewController.h"
 #import "BookSource.h"
 
-@interface TxtSource : BookSource
+@interface TxtSource : BookSource<UIPageViewControllerDataSource>
 
 
 @end

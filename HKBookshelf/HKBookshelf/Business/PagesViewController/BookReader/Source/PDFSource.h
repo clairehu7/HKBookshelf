@@ -9,5 +9,5 @@
 #import "PDFDataViewController.h"
 #import "BookSource.h"
 
-@interface PDFSource : BookSource 
+@interface PDFSource : BookSource <UIPageViewControllerDataSource>
 @end
